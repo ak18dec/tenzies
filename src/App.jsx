@@ -17,7 +17,7 @@ export default function App() {
             }))
   }
 
-  const diceElements = dice.map(dieObject => <Die key={dieObject.id} value={dieObject.value} />)
+  const diceElements = dice.map(dieObject => (<Die key={dieObject.id} value={dieObject.value} isHeld={dieObject.isHeld} />))
 
   function rollDice() {
     setDice(generateAllNewDice())
