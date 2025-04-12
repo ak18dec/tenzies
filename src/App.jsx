@@ -55,6 +55,9 @@ export default function App() {
           height={window.innerHeight || 200} 
         />
       }
+      <div aria-live="polite" className="sr-only">
+        {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
+      </div>
       <h1 className="title">Tenzies</h1>
       <p className="instructions">
         Roll until all dice are the same. 
