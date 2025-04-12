@@ -65,6 +65,7 @@ button {
 button.roll-dice {
     height: 50px;
     white-space: nowrap;
+    min-width: 135px;
     width: auto;
     padding: 6px 21px;
     border: none;
